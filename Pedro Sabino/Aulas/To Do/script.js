@@ -15,5 +15,14 @@ window.onload = function (){
 
         //a lot of girls and faggots will be there
         lista.appendChild(li);
+        
+        //lots of "pizza"...
+        const btnRemover = this.document.createElement("button");
+        btnRemover.textContent = "x";
+        btnRemover.addEventListener("click", () => {
+            li.remove();
+        });
+
+        li.appendChild(btnRemover);
     });
 }
