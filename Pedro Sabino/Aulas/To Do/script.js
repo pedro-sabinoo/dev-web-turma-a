@@ -23,6 +23,8 @@ window.onload = function (){
             li.remove();
         });
 
+        
+
         li.appendChild(btnRemover);
     });
 }
