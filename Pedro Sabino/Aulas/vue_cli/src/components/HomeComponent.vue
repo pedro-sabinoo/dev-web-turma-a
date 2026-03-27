@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer id="footer">
-            <p>Bem vindo: {{ nome }} Olá mundo do <b>VUE com CLI</b></p>
+            <p>Bem vindo: {{ nome }} Ao mundo do <b>VUE com CLI</b></p>
         </footer>
     </div>
 </template>
