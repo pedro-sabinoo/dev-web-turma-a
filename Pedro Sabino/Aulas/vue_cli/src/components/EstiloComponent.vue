@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Titulo do Componente</h1>
-        <p class="subtitulo">Subtitulo do Componente</p>
+        <h1>Super Tormentor</h1>
+        <p class="subtitulo">Rock n Roll é coisa de Pirocudos</p>
     </div>
 </template>
 

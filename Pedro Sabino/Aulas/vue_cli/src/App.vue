@@ -4,9 +4,14 @@
       <br/>
       <home-component/>
       <br/>
-      <usuario-component/>
+      <usuario-component v-show="isUsuarioVisivel"/>
       <br/>
       <estilo-component/>
+      <br>
+      <imagem-component 
+      urlImg="https://garagem360.com.br/wp-content/uploads/2022/05/P90462503_highRes_the-new-bmw-3-series.jpg"
+       larguraImg="300"
+       @visibilidade-img="escutarVisibilidadeImg"/>
   </div>
 </template>
 
@@ -14,6 +19,7 @@
 import HomeComponent from './components/HomeComponent.vue';
 import UsuarioComponent from './components/UsuarioComponent.vue';
 import EstiloComponent from './components/EstiloComponent.vue';
+import ImagemComponent from './components/ImagemComponent.vue';
 
 export default {
   name: 'App',
@@ -21,6 +27,17 @@ export default {
     HomeComponent,
     UsuarioComponent,
     EstiloComponent,
+    ImagemComponent,
+  },
+  data() {
+    return{
+      isUsuarioVisivel: false,
+    };
+  },
+  methods: {
+    escutarVisibilidadeImg(isImgComponentVisivel){
+          this.isUsuarioVisivel = !isImgComponentVisivel;
+    },
   },
   created() {
     console.log("created");

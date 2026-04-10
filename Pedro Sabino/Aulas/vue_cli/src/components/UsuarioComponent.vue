@@ -15,7 +15,7 @@
         name: "UsuarioComponent",
         data() {
             return {
-                nome: "Peaga da bmw, ex o Hb20",
+                nome: "Peaga da bmw, ex do Hb20",
                 email: "peaga@BMW.com.br",
                 doNiggasLikeChicken: false,
                 urlImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1dKpOrFHYLNEMatdi_l0q4pynf9k_5Jepg&s",
